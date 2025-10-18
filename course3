@@ -1,0 +1,16 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	double pi, r, obwod, pole;
+	pi = 3.1415;
+	cout << "Podaj r" <<endl;
+	cin >> r;
+	
+	obwod = 2 * pi * r;
+	pole = pi * pow(r, 2);
+	cout << "Obwod:" << obwod <<endl;
+	cout << "Pole:" << pole;
+	return 0;
