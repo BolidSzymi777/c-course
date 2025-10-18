@@ -1,0 +1,18 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    double a, b, c, srednia;
+    
+    cout << "Podaj a: ";
+    cin >> a;
+    cout << "Podaj b: ";
+    cin >> b;
+    cout << "Podaj c: ";
+    cin >> c;
+    srednia= (a + b + c) / 3;
+    cout << "srednia: " << srednia;
+    return 0;
+}
