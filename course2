@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int a, h, pole_trojkata;
+
+	cout << "Podaj a ";
+	cin >> a;
+	cout << "Podaj h ";
+	cin >> h;
+	pole_trojkata= a * h / 2;
+	cout << "Pole trojkata: " << pole_trojkata;
+
+	return 0;
+}
