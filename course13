@@ -1,0 +1,97 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	//1. Sprawdzenie wieku i prawo do głosowania.
+		//Wczytaj wiek użytkownika.
+		//Jeśli >= 18 - "Masz prawo do głosowania".
+		//Jeśli < 18 "Nie masz prawa do głosowania”.
+	int wiek;
+	cout << "Podaj swoj wiek" << endl;
+	cin >> wiek;
+	if (wiek >= 18) {
+		cout << "Masz prawo do glosowania" <<endl;
+	}
+	else if (wiek < 18) {
+		cout << "Nie masz prawa do glosowania" <<endl;
+	}
+	//2. Ocena szkolna na podstawie wyniku procentowego
+	//Wczytaj wynik procentowy z testu(0–100).
+	//90–100 - „Ocena: celujący”,
+	//75–89 - „Ocena : bardzo dobry”,
+	//50–74 - „Ocena : dobry”,
+	//< 50 - „Ocena : niedostateczny”.
+	int procent;
+	cout << "Podaj wynik procentowy" << endl;
+	cin >> procent;
+	if (procent < 50) {
+		cout << "Ocena : niedostateczny" <<endl;
+	}
+
+	else if (procent >= 50 && procent < 75) {
+		cout << "Ocena : dobry" << endl;
+	}
+	else if (procent >= 75 && procent < 90) {
+		cout << "Ocena : bardzo dobry" << endl;
+	}
+	else if (procent >= 90 && procent <= 100) {
+		cout << "Ocena : celujacy" << endl;
+	}
+	else if (procent > 100 ) {
+		cout << "Wprowadziles bledne dane" << endl;
+	}
+		//3. Sprawdzenie liczby dodatniej lub ujemnej
+		//Wczytaj liczbę całkowitą.
+		//Jeśli dodatnia - „Liczba dodatnia”,
+		//jeśli ujemna - „Liczba ujemna”,
+		//jeśli 0 - „Liczba równa zero”.
+	int liczba;
+	cout << "Podaj liczbe" << endl;
+	cin >>liczba;
+	if (liczba > 0) {
+		cout << "Liczba dodatnia" << endl;
+	}
+	else if (liczba < 0) {
+		cout << "Liczba ujemna" << endl;
+	}
+	else {
+		cout << "Jest zerem" << endl;
+	}
+		//4. Sprawdzenie czy liczba mieści się w zakresie 100–200 lub poza nim
+		//Wczytaj liczbę.
+		//Jeśli >= 100 i <= 200 - "Liczba w przedziale 100–200"
+		//w przeciwnym razie - "Liczba poza przedziałem"
+	int liczba1;
+	cout << "Podaj liczbe" <<endl;
+	cin >> liczba1;
+	if (liczba1 >= 100 && liczba1 <= 200) {
+		cout << "Liczba w przedziale 100-200" <<endl;
+	}
+	else {
+		cout << "Liczba poza przedzialem" <<endl;
+	}
+		//5. Sprawdzenie największej liczby z trzech wprowadzonych
+		//Wczytaj trzy liczby.
+		//Program wypisze, która jest największa.
+	int a, b, c;
+	cout << "Podaj pierwsza liczbe" << endl;
+	cin >> a;
+	cout << "Podaj druga liczbe" << endl;
+	cin >> b;
+	cout << "Podaj trzecia liczbe" << endl;
+	cin >> c;
+	
+	if (a > b && a > c) {
+		cout << "Najwieksza liczba to: " << a;
+	}
+	else if (b > a && b > c) {
+		cout << "Najwieksza liczba to: " << b;
+	}
+	else if (c > a && c > b) {
+		cout << "Najwieksza liczba to: " << c;
+	}
+	return 0;
+		}
