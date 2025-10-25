@@ -1,0 +1,26 @@
+#include<iostream>      
+#include<cstring>
+#include<cmath>
+#include<cctype>
+
+using namespace std;
+
+
+
+
+
+
+//10. Napisz funkcję maximum, która zwraca wiekszosc z dwóch liczb.
+int maksimum(int a, int b) {
+	if (a < b) {
+		return b;
+	}
+	else {
+		return a;
+	}
+
+}
+int main() {
+	cout << maksimum(12, 7);
+	return 0;
+}
