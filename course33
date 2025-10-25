@@ -1,0 +1,22 @@
+#include<iostream>      
+#include<cstring>
+#include<cmath>
+#include<cctype>
+
+using namespace std;
+
+
+
+
+//4. Napisz funkcję czy_parzysta, która zwraca true, jeśli liczba jest parzysta, a false w przeciwnym wypadku.
+bool czy_parzysta(int n) {
+	if (n % 2 == 0)
+		return true;
+	else
+		return false;
+}
+int main() {
+	cout << czy_parzysta(12);
+	return 0;
+
+}
