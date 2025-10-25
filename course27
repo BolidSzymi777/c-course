@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstring>
+#include <cctype>
+using namespace std;
+
+int suma(int a, int b) {
+   
+    int suma = a + b;
+    return suma;
+
+}
+
+
+
+int main() {
+   cout << suma(5,9) <<endl;
+   cout << suma(13, 51);
+   return 0;
+}
