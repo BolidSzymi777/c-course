@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstring>
+#include <cctype>
+using namespace std;
+
+int kwadrat(int a){
+	
+	
+	return a * a;
+}
+
+
+
+int main() {
+	int a;
+	cout << "podaj liczbe:";
+
+		cin >> a;
+		cout << "kwadrat liczby " << a <<" jest rowny " <<kwadrat(a);
+ 
+
+
+   return 0;
+}
