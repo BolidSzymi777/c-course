@@ -1,0 +1,19 @@
+#include<iostream>      
+#include<cstring>
+#include<cmath>
+#include<cctype>
+
+using namespace std;
+
+
+
+
+//7. Napisz funkcję double pole_kola, która zwraca pole koła.
+double pole_kola(double a) {
+	double pole_kola = 2 * 3.14 * a;
+	return pole_kola;
+}
+int main() {
+	cout << pole_kola(12);
+		return 0;
+}
